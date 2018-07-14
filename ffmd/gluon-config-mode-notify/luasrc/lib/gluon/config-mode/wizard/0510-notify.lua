@@ -1,23 +1,22 @@
 return function(form, uci)
-	local site = require 'gluon.site'
+local site = require 'gluon.site'
 
-	local owner = uci:get_first("gluon-node-info", "owner")
+local notify = uci:get_first("gluon-node-info", "notify")
 
-	local s = form:section(Section, nil, translate(
-		'Please provide your contact information here to '
-		.. 'allow others to contact you. Note that '
-		.. 'this information will be visible <em>publicly</em> '
-		.. 'on the internet together with your node\'s coordinates.'
-	))
+local s = form:section(Section, nil, translate(
+	'You may check this option to be notified in case there '
+	.. 'are problems with your node, such as being offline '
+	.. 'for a certain amount of time.'
+))
 
-	local o = s:option(Value, "contact", translate("Contact info"), translate("e.g. E-mail or phone number"))
-	o.default = uci:get("gluon-node-info", owner, "contact")
-	o.optional = not site.config_mode.owner.obligatory(false)
-	-- without a minimal length, an empty string will be accepted even with "optional = false"
-	o.datatype = "minlength(1)"
-	function o:write(data)
-		uci:set("gluon-node-info", owner, "contact", data)
-	end
+local o = s:option(Flag, "notify", translate("Notify on problems with the node"))
+o.default = uci:get("gluon-node-info", notify, "notify")
+o.optional = not site.config_mode.notify.obligatory(false)
+-- without a minimal length, an empty string will be accepted even with "optional = false"
+o.datatype = "minlength(1)"
+function o:write(data)
+	uci:set("gluon-node-info", notify, "notify", data)
+end
 
-	return {'gluon-node-info'}
+return {'gluon-node-info'}
 end
