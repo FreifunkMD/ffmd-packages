@@ -1,1 +1,1 @@
-need_boolean(in_site({'config_mode', 'notify', 'obligatory'}), false)
+need_boolean(in_site({'config_mode', 'downtime_notification', 'obligatory'}), false)
