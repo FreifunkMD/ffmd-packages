@@ -34,7 +34,6 @@ function M.handle(data)
   else
     uci:delete("gluon-node-info", uci:get_first("gluon-node-info", "owner"), "downtime_notification")
   end
-  uci:save("gluon-node-info")
   uci:commit("gluon-node-info")
 end
 
