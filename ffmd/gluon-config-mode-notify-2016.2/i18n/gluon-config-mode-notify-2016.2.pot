@@ -1,0 +1,32 @@
+msgid ""
+msgstr "Content-Type: text/plain; charset=UTF-8"
+
+msgid ""
+msgstr "You may chose a period of time after which you will be notified by an automated e-mail if the node is offline."
+
+msgid "Downtime notification e-mail"
+msgstr ""
+
+msgid "If activated make sure to put a valid e-mail address in the contact field."
+msgstr ""
+
+msgid "Never send an e-mail for this node"
+msgstr ""
+
+msgid "After a few minutes"
+msgstr ""
+
+msgid "After an hour"
+msgstr ""
+
+msgid "After six hours"
+msgstr ""
+
+msgid "After a day"
+msgstr ""
+
+msgid "After three days"
+msgstr ""
+
+msgid "After a week"
+msgstr ""

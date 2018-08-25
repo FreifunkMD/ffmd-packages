@@ -24,7 +24,7 @@ function M.section(form)
   o:value(60, i18n.translate('After an hour'))
   o:value(6*60, i18n.translate('After six hours'))
   o:value(24*60, i18n.translate('After a day'))
-  o:value(3*24*60, i18n.translate('After three  days'))
+  o:value(3*24*60, i18n.translate('After three days'))
   o:value(7*24*60, i18n.translate('After a week'))
 end
 
