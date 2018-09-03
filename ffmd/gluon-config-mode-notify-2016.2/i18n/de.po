@@ -1,0 +1,43 @@
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+"Project-Id-Version: gluon-config-mode-notify-2018.2\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Language-Team: Stefan Haun <tux@netz39.de>\n"
+"MIME-Version: 1.0\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.11\n"
+"Last-Translator: \n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Language: de\n"
+
+msgid "You may chose a period of time after which you will be notified by an automated e-mail if the node is offline."
+msgstr "Du kannst auswählen, ob Du mit einer E-Mail informiert werden möchtest, wenn der Knoten offline ist."
+
+msgid "Downtime notification e-mail"
+msgstr "E-Mail bei Nichtverfügbarkeit"
+
+msgid "If activated make sure to put a valid e-mail address in the contact field."
+msgstr "Um dieses Feature zu nutzen, muss in den Kontaktdaten eine gültige E-Mail-Adresse hinterlegt sein."
+
+msgid "Never send an e-mail for this node"
+msgstr "Keine Benachrichtigung"
+
+msgid "After a few minutes"
+msgstr "Nach ein paar Minuten"
+
+msgid "After an hour"
+msgstr "Nach einer Stunde"
+
+msgid "After six hours"
+msgstr "Nach 6 Stunden"
+
+msgid "After a day"
+msgstr "Nach einem Tag"
+
+msgid "After three days"
+msgstr "Nach drei Tagen"
+
+msgid "After a week"
+msgstr "Nach einer Woche"
