@@ -81,7 +81,7 @@ if [ -z "$STATE" ]; then
 
   #VPN
   # fastd zu WireGuard
-  WipeWriteUci gluon.mesh_vpn.enabled 	fastd.mesh_vpn.enabled
+  WipeWriteUci fastd.mesh_vpn.enabled gluon.mesh_vpn.enabled
   # fastd o. Tunneldigger zu fastd o. Tunneldigger
   # WipeWriteUci fastd.mesh_vpn.secret
 
