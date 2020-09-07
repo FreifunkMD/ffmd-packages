@@ -157,13 +157,17 @@ cp /etc/rc.local /tmp
 cp /etc/config/cleanup-gluon-config /tmp/cleanup-gluon-config
 rm -rf /overlay/upper/*
 sleep 10
+sync
 mount -o remount /
 sleep 10
+sync
 cp /tmp/cleanup-gluon-config /etc/config/cleanup-gluon-config
 cp /tmp/rc.local /etc/rc.local
 cp /tmp/dropbear/* /etc/dropbear
 cp ${CACHESTOREFILE_TMP} ${CACHESTOREFILE}
 reboot
+sleep 10
+sync
 EOF
   chmod +x /tmp/cleanup
   /tmp/cleanup &
